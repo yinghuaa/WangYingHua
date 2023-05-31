@@ -15,7 +15,7 @@
             android:name=".MainActivity"
             android:screenOrientation="landscape"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="王櫻樺"
             android:theme="@style/Theme.WangYingHua">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
