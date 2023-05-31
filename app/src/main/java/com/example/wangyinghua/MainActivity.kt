@@ -40,19 +40,20 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Box(
-        modifier = Modifier.fillMaxSize()
-    ){
-        Canvas(modifier = Modifier){
-            drawRect(androidx.compose.ui.graphics.Color.Blue, Offset(200f, 300f), Size(100f,100f))
-        }
-        Canvas(modifier = Modifier){
-            drawRect(androidx.compose.ui.graphics.Color.Blue, Offset(500f, 500f), Size(100f,100f))
-        }
-    }
+
     Column() {
         Text(text = "作者:資管二B 王櫻樺")
         Image(painter = painterResource(id = R.drawable.map), contentDescription = "地圖")
+    }
+    Box(
+            modifier = Modifier.fillMaxSize()
+            ){
+        Canvas(modifier = Modifier){
+            drawRect(androidx.compose.ui.graphics.Color.Blue, Offset(675f, 175f), Size(25f,25f))
+        }
+        Canvas(modifier = Modifier){
+            drawRect(androidx.compose.ui.graphics.Color.Blue, Offset(1500f, 900f), Size(25f,25f))
+        }
     }
 }
 
